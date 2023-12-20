@@ -55,6 +55,13 @@ def draw_selected_cell():
     if selected_cell is not None:
         pygame.draw.rect(screen, SELECTED_CELL_COLOR, selected_cell, 3)
 
+# Function to check if the puzzle is complete
+def is_puzzle_complete():
+    for row in puzzle:
+        if 0 in row:
+            return False
+    return True
+
 # Main game loop
 while True:
     for event in pygame.event.get():
@@ -77,5 +84,11 @@ while True:
     draw_grid()
     draw_numbers()
     draw_selected_cell()
+
+    if is_puzzle_complete():
+        font_complete = pygame.font.Font(None, 48)
+        text_complete = font_complete.render("Puzzle Complete!", True, BLACK)
+        text_rect_complete = text_complete.get_rect(center=(WIDTH // 2, HEIGHT // 2))
+        screen.blit(text_complete, text_rect_complete)
 
     pygame.display.flip()

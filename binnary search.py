@@ -15,10 +15,11 @@ def binary_search(arr, target):
 
 # Example usage:
 array = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
-target = int(input())
+target = 1
 result = binary_search(array, target)
 
 if result != -1:
     print(f"Element {target} found at index {result}.")
 else:
     print(f"Element {target} not found in the array.")
+
