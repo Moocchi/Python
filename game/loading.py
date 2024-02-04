@@ -8,7 +8,6 @@ def progress_bar(total=50):
         progress = "[" + "=" * i + " " * (total - i) + "]"
         print(f"\r{Fore.BLUE}{progress}", end="")
 
-        # Adjust sleep duration to reverse from fast to slow
         sleep_duration = max(0, 0.1 - ((total - i) / (total * 10)))
         time.sleep(sleep_duration)
 
