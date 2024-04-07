@@ -25,9 +25,23 @@ for _ in range(10):
 
 print(sisa)'''
 
-a = [10]
+'''a = [10]
 
 user_input = int(input("Masukkan integer: "))
 a.append(user_input)  # Use append to add the user input as the second element
 
-print(a)
+print(a)'''
+
+'''genap =[]
+
+for _ in range (0,1000):
+    if _ %70 == 0 :
+        genap.append(_)
+    elif _ == 0:
+        pass
+
+print(genap)'''
+
+
+
+

@@ -1,7 +1,7 @@
 import os
 
 class BankAccount:
-    def __init__(self, no_rek, initial_balance=5000):
+    def __init__(self, no_rek, initial_balance=50000):
         self.no_rek = no_rek
         self.balance = initial_balance
 
@@ -57,7 +57,7 @@ def nabung(account):
             account.balance += deposit_amount
             print(f"\nTabungan berhasil!")
             print("---------------------")
-            print(f"No. rek       :                  ")
+            print(f"No. rek       : {account.no_rek}   ")
             print(f"Saldo saat ini: {account.balance}\n")
         else:
             print("Masukkan jumlah yang valid (harus lebih dari 0).")
