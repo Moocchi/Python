@@ -41,7 +41,7 @@ while True:
     print("===========")
     print("\n")
     print_sudoku(sudoku)
-    print("\nSilakan menjawab ya qaqa 30E")
+    print("\nSilakan menjawab ya qaqa E")
     print("-------------------------------")
 
     for i in range(4):
